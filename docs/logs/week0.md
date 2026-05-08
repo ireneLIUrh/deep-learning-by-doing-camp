@@ -6,10 +6,10 @@
 - [x] 在实验室服务器上 clone 仓库
 - [x] 创建新的 conda 环境
 - [x] 安装 MkDocs Material
-- [ ] 搭建第一版文档站
-- [ ] 发布到 GitHub Pages
-- [ ] 开启线性代数复习
-- [ ] 完成第一次正式 commit
+- [x] 搭建第一版文档站
+- [x] 发布到 GitHub Pages
+- [x] 开启线性代数复习
+- [x] 完成第一次正式 commit
 
 ## 本项目为什么存在？
 
