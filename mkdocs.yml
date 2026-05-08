@@ -1,0 +1,50 @@
+site_name: Deep Learning by Doing Camp
+site_description: A learning-by-doing camp for deep learning, math, coding, and research-oriented projects.
+site_author: Irene LIU
+repo_url: https://github.com/ireneLIUrh/deep-learning-by-doing-camp
+repo_name: ireneLIUrh/deep-learning-by-doing-camp
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Weekly Logs:
+      - Week 0: logs/week0.md
+  - Math:
+      - Linear Algebra:
+          - Week 0 Kickoff: math/linear-algebra/week0-linear-algebra.md
+  - Deep Learning:
+      - Roadmap: deep-learning/roadmap.md
+  - Coding:
+      - Overview: coding/index.md

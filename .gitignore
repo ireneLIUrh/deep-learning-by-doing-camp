@@ -216,3 +216,39 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project-specific ignores ---
+
+# Virtual environment
+.venv/
+
+# MkDocs build output
+site/
+
+# Data files
+data/raw/
+data/processed/
+*.csv
+*.tsv
+*.h5
+*.h5ad
+*.h5seurat
+*.rds
+*.RData
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Results
+results/*
+!results/.gitkeep
+
+# Generated reports
+reports/*.html
+reports/*.pdf
+reports/*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
