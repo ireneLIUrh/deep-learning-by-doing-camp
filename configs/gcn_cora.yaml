@@ -1,0 +1,23 @@
+# GCN on Cora configuration
+
+model:
+  name: GCN
+  in_channels: 1433
+  hidden_channels: 64
+  out_channels: 7
+  num_layers: 2
+  dropout: 0.5
+
+data:
+  dataset: Cora
+  root: ./data
+
+training:
+  epochs: 200
+  optimizer: adam
+  lr: 1.0e-2
+  weight_decay: 5.0e-4
+
+logging:
+  log_interval: 10
+  save_dir: ./results/gcn_cora

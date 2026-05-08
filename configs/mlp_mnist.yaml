@@ -1,0 +1,26 @@
+# MLP on MNIST configuration
+
+model:
+  name: MLP
+  input_dim: 784
+  hidden_dims: [256, 128]
+  output_dim: 10
+  activation: relu
+  dropout: 0.2
+
+data:
+  dataset: MNIST
+  root: ./data
+  batch_size: 64
+  num_workers: 2
+
+training:
+  epochs: 20
+  optimizer: adam
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  scheduler: cosine
+
+logging:
+  log_interval: 100
+  save_dir: ./results/mlp_mnist
