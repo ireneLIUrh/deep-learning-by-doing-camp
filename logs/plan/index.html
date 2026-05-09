@@ -1,0 +1,2119 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A learning-by-doing camp for deep learning, math, coding, and research-oriented projects.">
+      
+      
+        <meta name="author" content="Irene LIU">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>一、总体目标 - Deep Learning by Doing Camp</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Deep Learning by Doing Camp" class="md-header__button md-logo" aria-label="Deep Learning by Doing Camp" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Deep Learning by Doing Camp
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              一、总体目标
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ireneLIUrh/deep-learning-by-doing-camp" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ireneLIUrh/deep-learning-by-doing-camp
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../week0/" class="md-tabs__link">
+          
+  
+  Weekly Logs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../math/linear-algebra/week0-linear-algebra/" class="md-tabs__link">
+          
+  
+  Math
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deep-learning/roadmap/" class="md-tabs__link">
+          
+  
+  Deep Learning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../coding/" class="md-tabs__link">
+          
+  
+  Coding
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Deep Learning by Doing Camp" class="md-nav__button md-logo" aria-label="Deep Learning by Doing Camp" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Deep Learning by Doing Camp
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ireneLIUrh/deep-learning-by-doing-camp" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ireneLIUrh/deep-learning-by-doing-camp
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Weekly Logs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Weekly Logs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Math
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linear Algebra
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Linear Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../math/linear-algebra/week0-linear-algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Week 0 Kickoff
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Deep Learning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Deep Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deep-learning/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Coding
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Coding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../coding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">一、总体目标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>目标是形成三种能力：</p>
+<ol>
+<li><strong>理论能力</strong>：能从线代、概率、统计、优化推导到机器学习和深度学习模型。</li>
+<li><strong>代码能力</strong>：能用 PyTorch / PyG 实现、训练、调试、评估模型。</li>
+<li><strong>科研工程能力</strong>：能把一个算法课题整理成 GitHub 项目，包括数据接口、模型模块、训练脚本、实验配置、结果复现、文档和论文复现记录。</li>
+</ol>
+<p>推荐的学习顺序：</p>
+<blockquote>
+<p><strong>PyTorch 基础 → GNN 快速入门 → 动态/时空 GNN → 回补数学统计机器学习 → 深度学习系统化 → 大模型与 Agent 概念 → 课题模型原型工程化</strong></p>
+</blockquote>
+<h1 id="_2">二、学习周期<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
+<p>分成 <strong>10 个月主计划 + 长期迭代计划</strong>。
+强度按非工作时间设计：</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>安排</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>周一至周五</td>
+<td>每晚 1–1.5 小时，主要用于读书、看课、做小练习</td>
+</tr>
+<tr>
+<td>周六</td>
+<td>3–4 小时，集中做代码任务和 GitHub 整理</td>
+</tr>
+<tr>
+<td>周日</td>
+<td>2 小时，复盘、写笔记、整理 README、规划下周</td>
+</tr>
+<tr>
+<td>每周总量</td>
+<td>8–12 小时</td>
+</tr>
+</tbody>
+</table>
+<h1 id="10-timetable">三、10个月 timetable<a class="headerlink" href="#10-timetable" title="Permanent link">&para;</a></h1>
+<h2 id="phase-0-github">Phase 0：环境与 GitHub 工程骨架搭建<a class="headerlink" href="#phase-0-github" title="Permanent link">&para;</a></h2>
+<p><strong>第 0–1 周</strong></p>
+<p>目标：先把“学习—代码—笔记—实验”放进一个长期 GitHub 项目。</p>
+<h3 id="github">需要建立的 GitHub 仓库<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<p>仓库名：</p>
+<div class="highlight"><pre><span></span><code>deep-learning-by-doing-camp
+</code></pre></div>
+<p>初始结构：</p>
+<div class="highlight"><pre><span></span><code>deep-learning-by-doing-camp/
+├── README.md
+├── pyproject.toml
+├── requirements.txt
+├── environment.yml
+├── .gitignore
+├── configs/
+│   ├── mlp_mnist.yaml
+│   ├── gcn_cora.yaml
+│   └── temporal_gnn_toy.yaml
+├── notebooks/
+│   ├── 00_linear_algebra_review.ipynb
+│   ├── 01_probability_review.ipynb
+│   └── 02_pytorch_basics.ipynb
+├── src/
+│   └── dlbydoing/
+│       ├── __init__.py
+│       ├── data/
+│       ├── models/
+│       ├── training/
+│       ├── utils/
+│       └── visualization/
+├── scripts/
+│   ├── train_mlp.py
+│   ├── train_gcn.py
+│   └── train_temporal_gnn.py
+├── tests/
+│   ├── test_tensor_shapes.py
+│   └── test_gcn_forward.py
+├── reports/
+│   ├── weekly_notes/
+│   └── paper_reproduction/
+└── results/
+    └── .gitkeep
+</code></pre></div>
+<h3 id="github_1">本阶段 GitHub 任务<a class="headerlink" href="#github_1" title="Permanent link">&para;</a></h3>
+<p>完成以下 5 个 commit：</p>
+<div class="highlight"><pre><span></span><code>commit 1: initialize project structure
+commit 2: add environment and dependency files
+commit 3: add PyTorch tensor basics notebook
+commit 4: add first train script for linear regression
+commit 5: add README learning roadmap
+</code></pre></div>
+<h3 id="_3">推荐资料<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>主线资料：</p>
+<ul>
+<li>PyTorch 官方 tutorials：用于 PyTorch 张量、Dataset、DataLoader、模型定义、训练循环入门。官方教程明确覆盖数据加载、构建神经网络、训练和保存模型等基础内容。(<a href="https://docs.pytorch.org/tutorials/index.html?utm_source=chatgpt.com">PyTorch Docs</a>)</li>
+<li>PyTorch 官网生态页：PyTorch 当前生态中包含 PyTorch Geometric、Captum、skorch 等工具，其中 PyG 明确用于图、点云、流形等不规则数据。(<a href="https://pytorch.org/?utm_source=chatgpt.com">PyTorch</a>)</li>
+</ul>
+<h2 id="phase-1-pytorch">Phase 1：快速恢复数学与 PyTorch 基础<a class="headerlink" href="#phase-1-pytorch" title="Permanent link">&para;</a></h2>
+<p><strong>第 1–4 周</strong></p>
+<p>目标：恢复深度学习/GNN 所必需的数学和 PyTorch 能力。</p>
+<h3 id="week-1-pytorch-tensor">Week 1：线代复健 + PyTorch Tensor<a class="headerlink" href="#week-1-pytorch-tensor" title="Permanent link">&para;</a></h3>
+<p>数学重点：</p>
+<ul>
+<li>向量、矩阵、张量</li>
+<li>矩阵乘法</li>
+<li>线性变换</li>
+<li>特征值/特征向量</li>
+<li>SVD 的直观含义</li>
+<li>图邻接矩阵、度矩阵、拉普拉斯矩阵</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>用 NumPy 实现矩阵乘法、标准化、PCA。</li>
+<li>用 PyTorch 重写。</li>
+<li>写一个 <code>notebooks/00_linear_algebra_review.ipynb</code>。</li>
+<li>写一个 <code>src/dlbydoing/utils/tensor_ops.py</code>。</li>
+</ol>
+<p>课题连接：</p>
+<div class="highlight"><pre><span></span><code>细胞表达矩阵 X: n_cells × n_genes
+空间图邻接矩阵 A: n_cells × n_cells
+GNN 输入: X + edge_index / adjacency
+</code></pre></div>
+<h3 id="week-2">Week 2：概率复健 + 自动求导<a class="headerlink" href="#week-2" title="Permanent link">&para;</a></h3>
+<p>数学重点：</p>
+<ul>
+<li>随机变量</li>
+<li>条件概率</li>
+<li>期望、方差、协方差</li>
+<li>常见分布：Bernoulli、Binomial、Gaussian、Poisson、Multinomial</li>
+<li>最大似然估计</li>
+<li>交叉熵与 KL divergence</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>用 PyTorch 写 logistic regression。</li>
+<li>手写 binary cross entropy。</li>
+<li>比较手写梯度和 <code>torch.autograd</code>。</li>
+<li>写 <code>notebooks/01_probability_and_autograd.ipynb</code>。</li>
+</ol>
+<p>课题连接：</p>
+<p>细胞类型分类、通讯事件预测、边存在概率预测，本质上都离不开：</p>
+<div class="highlight"><pre><span></span><code>P(y | x), P(edge | node_i, node_j), cross entropy, negative sampling
+</code></pre></div>
+<h3 id="week-3-mlp">Week 3：优化基础 + MLP<a class="headerlink" href="#week-3-mlp" title="Permanent link">&para;</a></h3>
+<p>数学重点：</p>
+<ul>
+<li>梯度下降</li>
+<li>SGD / Momentum / Adam</li>
+<li>learning rate</li>
+<li>overfitting / underfitting</li>
+<li>L2 regularization</li>
+<li>train/validation/test split</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>用 PyTorch 写 MLP 分类 MNIST 或 sklearn digits。</li>
+<li>完整实现：</li>
+<li>Dataset</li>
+<li>DataLoader</li>
+<li>model</li>
+<li>loss</li>
+<li>optimizer</li>
+<li>train loop</li>
+<li>eval loop</li>
+<li>checkpoint</li>
+<li>写 <code>scripts/train_mlp.py</code>。</li>
+</ol>
+<h3 id="week-4">Week 4：工程化基础<a class="headerlink" href="#week-4" title="Permanent link">&para;</a></h3>
+<p>工程重点：</p>
+<ul>
+<li><code>argparse</code> 或 <code>hydra/omegaconf</code></li>
+<li>YAML config</li>
+<li>logging</li>
+<li>seed 固定</li>
+<li>checkpoint 保存</li>
+<li>TensorBoard / CSV log</li>
+<li>README 记录实验</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>把 Week 3 的 MLP 改成命令行可运行：</li>
+</ol>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>scripts/train_mlp.py<span class="w"> </span>--config<span class="w"> </span>configs/mlp_mnist.yaml
+</code></pre></div>
+<ol>
+<li>加入：</li>
+</ol>
+<div class="highlight"><pre><span></span><code>outputs/
+├── checkpoints/
+├── logs/
+└── metrics.csv
+</code></pre></div>
+<p>本阶段结束产出：</p>
+<div class="highlight"><pre><span></span><code>v0.1: PyTorch basic training pipeline
+</code></pre></div>
+<h2 id="phase-2-gnn">Phase 2：迅速切入 GNN，服务课题<a class="headerlink" href="#phase-2-gnn" title="Permanent link">&para;</a></h2>
+<p><strong>第 5–10 周</strong></p>
+<p>这是最关键阶段。先不追求所有深度学习分支都学完，而是快速具备 GNN 阅读论文和改代码能力。</p>
+<h3 id="_4">推荐主线资料<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Stanford CS224W: Machine Learning with Graphs</strong>
+   该课程专门讲图机器学习，公开课页面说明 lecture slides 和 assignments 会发布在线，适合作为 GNN 主线课程。(<a href="https://web.stanford.edu/class/cs224w/?utm_source=chatgpt.com">Stanford University</a>)</li>
+<li><strong>PyTorch Geometric 文档</strong>
+   PyG 是基于 PyTorch 的 GNN 库，官方文档说明它用于结构化数据上的 GNN 训练。(<a href="https://pytorch-geometric.readthedocs.io/?utm_source=chatgpt.com">PyG Documentation</a>)</li>
+<li><strong>PyG introduction by example</strong>
+   PyG 的 <code>Data(x, edge_index)</code> 是你之后处理细胞图最核心的数据结构，官方示例展示了如何用 <code>edge_index</code> 和节点特征构造一个图。(<a href="https://pytorch-geometric.readthedocs.io/en/2.6.1/get_started/introduction.html?utm_source=chatgpt.com">PyG Documentation</a>)</li>
+<li><strong>Open Graph Benchmark, OGB</strong>
+   OGB 是 Stanford SNAP 维护的大规模图学习 benchmark，提供真实、大规模、多任务数据集，并带统一 evaluator。(<a href="https://snap-stanford.github.io/ogb-web/?utm_source=chatgpt.com">SNAP</a>)</li>
+</ol>
+<h3 id="week-5">Week 5：图数据结构与消息传递<a class="headerlink" href="#week-5" title="Permanent link">&para;</a></h3>
+<p>数学重点：</p>
+<ul>
+<li>图 <span class="arithmatex">\(G=(V,E)\)</span></li>
+<li>adjacency matrix</li>
+<li>degree matrix</li>
+<li>graph Laplacian</li>
+<li>message passing</li>
+<li>permutation invariance / equivariance</li>
+<li>neighborhood aggregation</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>不用 PyG，手写一个最简单的 GCN layer：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="n">H</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="n">D</span><span class="o">^</span><span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">}</span> <span class="n">A</span> <span class="n">D</span><span class="o">^</span><span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">}</span> <span class="n">X</span> <span class="n">W</span><span class="p">)</span>
+</code></pre></div>
+<ol>
+<li>用 toy graph 测试 shape。</li>
+<li>写 <code>src/dlbydoing/models/gcn_from_scratch.py</code>。</li>
+</ol>
+<p>课题连接：</p>
+<p>把细胞看作 node：</p>
+<div class="highlight"><pre><span></span><code>node = cell / spot
+node feature = gene expression embedding, HVG expression, UCE embedding
+edge = spatial adjacency / ligand-receptor edge / OT trajectory edge
+</code></pre></div>
+<h3 id="week-6pyg-gcn-graphsage-gat">Week 6：PyG 入门：GCN / GraphSAGE / GAT<a class="headerlink" href="#week-6pyg-gcn-graphsage-gat" title="Permanent link">&para;</a></h3>
+<p>模型重点：</p>
+<ul>
+<li>GCN</li>
+<li>GraphSAGE</li>
+<li>GAT</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>用 PyG 跑 Cora / PubMed node classification。</li>
+<li>对比 GCN、GraphSAGE、GAT。</li>
+<li>保存实验表格：</li>
+</ol>
+<div class="highlight"><pre><span></span><code>model | hidden_dim | layers | dropout | val_acc | test_acc
+</code></pre></div>
+<p>GitHub 任务：</p>
+<div class="highlight"><pre><span></span><code>scripts/train_node_classifier.py
+configs/gcn_cora.yaml
+configs/gat_cora.yaml
+reports/weekly_notes/week06_gnn_basics.md
+</code></pre></div>
+<h3 id="week-7">Week 7：大图训练策略<a class="headerlink" href="#week-7" title="Permanent link">&para;</a></h3>
+<p>你的数据有：</p>
+<div class="highlight"><pre><span></span><code>node 数量 ~100k
+node feature ~2000
+edge 稀疏
+time point ~10
+</code></pre></div>
+<p>所以必须学习：</p>
+<ul>
+<li>mini-batch graph training</li>
+<li>neighbor sampling</li>
+<li>subgraph sampling</li>
+<li>sparse tensor</li>
+<li>GPU memory profiling</li>
+<li>negative sampling</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>用 PyG NeighborLoader 训练 GraphSAGE。</li>
+<li>记录显存/内存。</li>
+<li>写一个大图 toy benchmark。</li>
+</ol>
+<p>课题连接：</p>
+<p>你的真实数据不适合一上来 full-batch GAT。建议以后优先考虑：</p>
+<div class="highlight"><pre><span></span><code>GraphSAGE / Cluster-GCN / GraphSAINT / neighbor sampling GAT
+</code></pre></div>
+<p>而不是直接把 10w 细胞的全图丢进 dense attention。</p>
+<h3 id="week-8">Week 8：链接预测与边分类<a class="headerlink" href="#week-8" title="Permanent link">&para;</a></h3>
+<p>你的课题里“通讯分数”“细胞间相互作用”“OT 跨时间连接”天然适合设置为：</p>
+<ol>
+<li><strong>edge prediction</strong></li>
+<li><strong>edge classification</strong></li>
+<li><strong>masked edge reconstruction</strong></li>
+<li><strong>future edge prediction</strong></li>
+</ol>
+<p>数学重点：</p>
+<ul>
+<li>link prediction</li>
+<li>negative sampling</li>
+<li>dot-product decoder</li>
+<li>bilinear decoder</li>
+<li>MLP edge decoder</li>
+<li>AUC / AP / F1</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>在 citation graph 上做 link prediction。</li>
+<li>实现三种 decoder：</li>
+</ol>
+<div class="highlight"><pre><span></span><code>dot product
+bilinear
+MLP([h_i, h_j, h_i*h_j])
+</code></pre></div>
+<p>课题连接：</p>
+<p>可以对应你的数据：</p>
+<div class="highlight"><pre><span></span><code>输入：time t 的空间图 + 表达特征
+预测：time t+1 是否存在 OT 高概率连接 / 通讯增强事件
+</code></pre></div>
+<h3 id="week-9">Week 9：动态图 / 时序图入门<a class="headerlink" href="#week-9" title="Permanent link">&para;</a></h3>
+<p>重点阅读：</p>
+<ul>
+<li>EvolveGCN</li>
+<li>DySAT</li>
+<li>TGN</li>
+<li>Dynamic GNN survey</li>
+</ul>
+<p>EvolveGCN 的核心思想是沿时间维度演化 GCN 参数，而不是依赖固定节点 embedding，适合动态图设置。(<a href="https://arxiv.org/abs/1902.10191?utm_source=chatgpt.com">arXiv</a>)
+DySAT 使用结构维度和时间维度的 self-attention 来学习动态图节点表示。(<a href="https://arxiv.org/abs/1812.09430?utm_source=chatgpt.com">arXiv</a>)
+TGN 面向连续时间动态图，把动态图表示为 timed events，并结合 memory module 和 graph operator 生成时间相关节点 embedding。(<a href="https://arxiv.org/abs/2006.10637?utm_source=chatgpt.com">arXiv</a>)
+2024–2025 的动态图 GNN survey 也指出，动态图 GNN 的核心是同时捕捉结构、时间和上下文关系，当前挑战包括可扩展性、异质信息和数据集不足。(<a href="https://arxiv.org/abs/2405.00476?utm_source=chatgpt.com">arXiv</a>)</p>
+<p>代码任务：</p>
+<ol>
+<li>构造 10 个时间点 toy graph。</li>
+<li>每个时间点训练一个 GCN。</li>
+<li>把每个时间点的 node embedding 输入 GRU / Transformer。</li>
+<li>预测下一个时间点的边或节点标签。</li>
+</ol>
+<p>建议先实现这个 baseline：</p>
+<div class="highlight"><pre><span></span><code>Static GNN encoder per time point + GRU temporal module + edge decoder
+</code></pre></div>
+<p>不要一开始就复现复杂 TGN。你的数据只有约 10 个时间点，更接近 discrete-time dynamic graph，而不是大规模 continuous event graph。</p>
+<h3 id="week-10-v0">Week 10：课题原型 v0<a class="headerlink" href="#week-10-v0" title="Permanent link">&para;</a></h3>
+<p>建立一个与你课题强相关的最小原型：</p>
+<div class="highlight"><pre><span></span><code>输入：
+  X_t: 第 t 个时间点细胞表达特征
+  A_spatial_t: 第 t 个时间点空间邻接图
+  A_ot_t_to_t+1: 相邻时间点 OT 连接图
+
+任务 A：
+  masked gene expression prediction
+
+任务 B：
+  future edge prediction
+
+任务 C：
+  ligand-receptor communication score regression / classification
+</code></pre></div>
+<p>建议模型：</p>
+<div class="highlight"><pre><span></span><code>Spatial GNN Encoder:
+  X_t, A_spatial_t -&gt; H_t
+
+Temporal Transition Module:
+  H_t + OT edges -&gt; H_{t+1_pred}
+
+Decoder:
+  gene decoder: H_{t+1_pred} -&gt; masked gene expression
+  edge decoder: H_i, H_j -&gt; edge probability
+  communication decoder: H_i, H_j, LR features -&gt; communication score
+</code></pre></div>
+<p>本阶段结束产出：</p>
+<div class="highlight"><pre><span></span><code>v0.2: GNN baseline for dynamic cell graph
+</code></pre></div>
+<h2 id="phase-3">Phase 3：经典机器学习与数理统计系统回补<a class="headerlink" href="#phase-3" title="Permanent link">&para;</a></h2>
+<p><strong>第 11–18 周</strong></p>
+<p>这阶段的目标是把理论基础补扎实，尤其是为后面写论文、做实验设计、解释模型结果服务。</p>
+<h3 id="week-11-i">Week 11：经典数理统计 I<a class="headerlink" href="#week-11-i" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>样本、总体、统计量</li>
+<li>估计量</li>
+<li>bias / variance</li>
+<li>confidence interval</li>
+<li>hypothesis testing</li>
+<li>p-value</li>
+<li>multiple testing correction</li>
+</ul>
+<p>课题连接：</p>
+<p>通讯事件驱动基因、差异通讯边、显著性检验，都需要这部分。</p>
+<p>代码任务：</p>
+<ol>
+<li>手写 t-test / permutation test。</li>
+<li>实现 Benjamini-Hochberg FDR。</li>
+<li>在模拟 ligand-receptor score 上做差异检验。</li>
+</ol>
+<h3 id="week-12-ii">Week 12：经典数理统计 II<a class="headerlink" href="#week-12-ii" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>linear regression</li>
+<li>logistic regression</li>
+<li>generalized linear model</li>
+<li>likelihood ratio test</li>
+<li>bootstrap</li>
+<li>permutation test</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>用 NumPy 手写 linear regression。</li>
+<li>用 PyTorch 写 logistic regression。</li>
+<li>对比 sklearn 结果。</li>
+</ol>
+<h3 id="week-13-i">Week 13：机器学习 I<a class="headerlink" href="#week-13-i" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>kNN</li>
+<li>naive Bayes</li>
+<li>decision tree</li>
+<li>random forest</li>
+<li>SVM</li>
+<li>evaluation metrics</li>
+</ul>
+<p>资料：</p>
+<ul>
+<li>西瓜书：作为中文主线。</li>
+<li>sklearn 官方 examples：作为代码辅助。</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>sklearn 跑传统 ML pipeline。</li>
+<li>对单细胞元数据做 toy classification。</li>
+<li>输出 confusion matrix、ROC、PR curve。</li>
+</ol>
+<h3 id="week-14-ii">Week 14：机器学习 II<a class="headerlink" href="#week-14-ii" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>PCA</li>
+<li>t-SNE</li>
+<li>UMAP</li>
+<li>clustering</li>
+<li>GMM</li>
+<li>EM algorithm</li>
+</ul>
+<p>课题连接：</p>
+<p>单细胞分析里 PCA / UMAP / clustering 是基础工具，不能只会调用 Seurat/Scanpy，要理解背后的优化目标和距离结构。</p>
+<h3 id="week-1516">Week 15–16：统计学习视角<a class="headerlink" href="#week-1516" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>bias-variance tradeoff</li>
+<li>regularization</li>
+<li>cross-validation</li>
+<li>model selection</li>
+<li>feature selection</li>
+<li>calibration</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>写一个统一的 <code>src/dlbydoing/evaluation/metrics.py</code>。</li>
+<li>写 <code>reports/weekly_notes/model_selection.md</code>。</li>
+<li>对 GNN 的 hidden_dim、layers、dropout 做小型 grid search。</li>
+</ol>
+<h3 id="week-1718-gnn">Week 17–18：把统计检验接入 GNN 结果<a class="headerlink" href="#week-1718-gnn" title="Permanent link">&para;</a></h3>
+<p>课题导向任务：</p>
+<div class="highlight"><pre><span></span><code>GNN 输出 edge score / communication score
+↓
+分组比较
+↓
+permutation test / bootstrap CI
+↓
+FDR correction
+↓
+筛选显著通讯边和驱动基因
+</code></pre></div>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>reports/prototype_statistical_testing_for_gnn_outputs.md
+</code></pre></div>
+<h2 id="phase-4">Phase 4：深度学习系统化<a class="headerlink" href="#phase-4" title="Permanent link">&para;</a></h2>
+<p><strong>第 19–28 周</strong></p>
+<p>这阶段开始系统读“花书”和现代教程。</p>
+<h3 id="_5">主线资料<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>《Deep Learning》花书：官方网页说明该书覆盖机器学习、深度学习、线性代数、概率、信息论、数值计算等背景内容。(<a href="https://www.deeplearningbook.org/?utm_source=chatgpt.com">深度学习书籍</a>)</li>
+<li>MIT Press 页面也说明该书包含数学和概念背景，覆盖线性代数、概率与信息论、数值计算和机器学习。(<a href="https://mitpress.mit.edu/9780262035613/deep-learning/?utm_source=chatgpt.com">MIT Press</a>)</li>
+<li>Dive into Deep Learning：建议作为代码化补充，尤其适合 PyTorch 实现。</li>
+</ul>
+<h3 id="week-19mlp">Week 19：MLP 与反向传播<a class="headerlink" href="#week-19mlp" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>computational graph</li>
+<li>backpropagation</li>
+<li>activation function</li>
+<li>initialization</li>
+<li>normalization</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>手写两层 MLP 前向和反向。</li>
+<li>用 PyTorch 版本对照。</li>
+</ol>
+<h3 id="week-20cnn">Week 20：CNN<a class="headerlink" href="#week-20cnn" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>convolution</li>
+<li>pooling</li>
+<li>receptive field</li>
+<li>ResNet</li>
+<li>batch norm</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>CIFAR-10 ResNet mini version。</li>
+<li>工程化训练脚本。</li>
+</ol>
+<p>与你课题关系：</p>
+<p>CNN 不是主线，但空间转录组图像/空间模式建模可能会用到。</p>
+<h3 id="week-21rnn-gru-lstm">Week 21：RNN / GRU / LSTM<a class="headerlink" href="#week-21rnn-gru-lstm" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>sequence modeling</li>
+<li>hidden state</li>
+<li>vanishing gradient</li>
+<li>gated mechanism</li>
+</ul>
+<p>课题连接：</p>
+<p>你的时间点少，但 temporal module 仍可能用 GRU / LSTM 作为 baseline。</p>
+<h3 id="week-22attention-transformer">Week 22：Attention 与 Transformer<a class="headerlink" href="#week-22attention-transformer" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>query/key/value</li>
+<li>scaled dot-product attention</li>
+<li>multi-head attention</li>
+<li>positional encoding</li>
+<li>Transformer encoder</li>
+</ul>
+<p>代码任务：</p>
+<ol>
+<li>手写 self-attention。</li>
+<li>用 Transformer 编码 toy time series。</li>
+<li>把 GNN embedding 序列输入 Transformer。</li>
+</ol>
+<h3 id="week-23autoencoder-vae">Week 23：Autoencoder / VAE<a class="headerlink" href="#week-23autoencoder-vae" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>representation learning</li>
+<li>encoder-decoder</li>
+<li>reconstruction loss</li>
+<li>variational inference</li>
+<li>ELBO</li>
+</ul>
+<p>课题连接：</p>
+<p>masked gene expression prediction 可以借鉴 autoencoder 思路。</p>
+<h3 id="week-24contrastive-learning">Week 24：Contrastive Learning<a class="headerlink" href="#week-24contrastive-learning" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>positive / negative pairs</li>
+<li>InfoNCE</li>
+<li>graph contrastive learning</li>
+<li>augmentation</li>
+</ul>
+<p>课题连接：</p>
+<p>可以为细胞 embedding 学习设计：</p>
+<div class="highlight"><pre><span></span><code>same trajectory positive pair
+near spatial neighbors positive pair
+random far cells negative pair
+</code></pre></div>
+<h3 id="week-2526">Week 25–26：模型解释与可视化<a class="headerlink" href="#week-2526" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>attention 不等于解释</li>
+<li>gradient-based attribution</li>
+<li>ablation</li>
+<li>perturbation</li>
+<li>embedding visualization</li>
+</ul>
+<p>PyTorch 生态中的 Captum 是模型解释工具，PyTorch 官网生态页列出了 Captum 作为可解释性库。(<a href="https://pytorch.org/?utm_source=chatgpt.com">PyTorch</a>)</p>
+<p>课题连接：</p>
+<p>你的最终论文需要回答：</p>
+<div class="highlight"><pre><span></span><code>模型学到了什么？
+哪些细胞通讯边重要？
+哪些 ligand-receptor pair 重要？
+哪些基因驱动了状态转变？
+</code></pre></div>
+<h3 id="week-2728">Week 27–28：复现一篇深度学习论文<a class="headerlink" href="#week-2728" title="Permanent link">&para;</a></h3>
+<p>建议不要选太复杂的论文。选以下之一：</p>
+<div class="highlight"><pre><span></span><code>GCN
+GraphSAGE
+GAT
+EvolveGCN
+DySAT
+TGN simplified version
+</code></pre></div>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>reports/paper_reproduction/gat_reproduction.md
+src/dlbydoing/models/gat.py
+scripts/train_gat.py
+</code></pre></div>
+<h2 id="phase-5-gnn">Phase 5：动态图 GNN 与课题模型深化<a class="headerlink" href="#phase-5-gnn" title="Permanent link">&para;</a></h2>
+<p><strong>第 29–36 周</strong></p>
+<p>这阶段回到你的课题主线。</p>
+<h3 id="week-29">Week 29：空间图构建策略<a class="headerlink" href="#week-29" title="Permanent link">&para;</a></h3>
+<p>任务：</p>
+<p>比较不同 edge 构建方式：</p>
+<div class="highlight"><pre><span></span><code>kNN spatial graph
+radius graph
+Delaunay graph
+ligand-receptor prior graph
+OT trajectory graph
+hybrid graph
+</code></pre></div>
+<p>代码产出：</p>
+<div class="highlight"><pre><span></span><code>src/dlbydoing/data/graph_builder.py
+</code></pre></div>
+<h3 id="week-30">Week 30：动态图表示方式<a class="headerlink" href="#week-30" title="Permanent link">&para;</a></h3>
+<p>比较三种表示：</p>
+<div class="highlight"><pre><span></span><code>Discrete snapshot graph:
+  G_1, G_2, ..., G_T
+
+Temporal interaction graph:
+  events = (source, target, time, feature)
+
+Multiplex heterogeneous graph:
+  spatial edge + OT edge + LR edge
+</code></pre></div>
+<p>结合你的数据，第一版建议用：</p>
+<div class="highlight"><pre><span></span><code>snapshot graph + OT inter-time edges
+</code></pre></div>
+<p>不要一开始就做连续时间 TGN。</p>
+<h3 id="week-31-baseline">Week 31：模型 baseline 设计<a class="headerlink" href="#week-31-baseline" title="Permanent link">&para;</a></h3>
+<p>至少实现 4 个 baseline：</p>
+<div class="highlight"><pre><span></span><code>Baseline 1: MLP only
+Baseline 2: static GCN per time point
+Baseline 3: GCN + GRU
+Baseline 4: GAT + Transformer
+</code></pre></div>
+<h3 id="week-32">Week 32：任务设计<a class="headerlink" href="#week-32" title="Permanent link">&para;</a></h3>
+<p>建议设置三个任务，从简单到难：</p>
+<table>
+<thead>
+<tr>
+<th>任务</th>
+<th>输入</th>
+<th>输出</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>masked gene prediction</td>
+<td>部分基因 mask 后的细胞图</td>
+<td>被 mask 的表达</td>
+<td>学空间结构</td>
+</tr>
+<tr>
+<td>future embedding prediction</td>
+<td>time t 图</td>
+<td>time t+1 embedding</td>
+<td>学时间规律</td>
+</tr>
+<tr>
+<td>future edge / communication prediction</td>
+<td>细胞对 embedding</td>
+<td>OT/LR/通讯边概率</td>
+<td>学通讯网络变化</td>
+</tr>
+</tbody>
+</table>
+<h3 id="week-33">Week 33：评价指标<a class="headerlink" href="#week-33" title="Permanent link">&para;</a></h3>
+<p>分类任务：</p>
+<div class="highlight"><pre><span></span><code>AUC, AP, F1, accuracy
+</code></pre></div>
+<p>回归任务：</p>
+<div class="highlight"><pre><span></span><code>MSE, MAE, Pearson, Spearman
+</code></pre></div>
+<p>空间/生物学任务：</p>
+<div class="highlight"><pre><span></span><code>cell type consistency
+trajectory consistency
+LR enrichment
+known pathway recovery
+</code></pre></div>
+<h3 id="week-34">Week 34：消融实验<a class="headerlink" href="#week-34" title="Permanent link">&para;</a></h3>
+<p>至少做：</p>
+<div class="highlight"><pre><span></span><code>without spatial edges
+without OT edges
+without attention
+without temporal module
+without LR prior
+</code></pre></div>
+<h3 id="week-35">Week 35：可解释性分析<a class="headerlink" href="#week-35" title="Permanent link">&para;</a></h3>
+<p>输出：</p>
+<div class="highlight"><pre><span></span><code>important edges
+important time windows
+important LR pairs
+important genes
+cell-type-level communication heatmap
+</code></pre></div>
+<h3 id="week-36">Week 36：整理成课题原型报告<a class="headerlink" href="#week-36" title="Permanent link">&para;</a></h3>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>reports/project_prototype_v1.md
+</code></pre></div>
+<p>结构：</p>
+<div class="highlight"><pre><span></span><code>1. Problem formulation
+2. Data representation
+3. Model architecture
+4. Training objectives
+5. Baselines
+6. Evaluation metrics
+7. Preliminary results
+8. Next steps
+</code></pre></div>
+<h2 id="phase-6agentskill">Phase 6：大模型、Agent、Skill 与科研自动化<a class="headerlink" href="#phase-6agentskill" title="Permanent link">&para;</a></h2>
+<p><strong>第 37–44 周</strong></p>
+<p>这部分不作为前期主线，但后期必须学，因为它和求职、科研效率、工程能力都有关系。</p>
+<h3 id="week-37">Week 37：大模型基础<a class="headerlink" href="#week-37" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>language model</li>
+<li>tokenization</li>
+<li>pretraining</li>
+<li>instruction tuning</li>
+<li>RLHF / preference optimization</li>
+<li>embedding model</li>
+</ul>
+<h3 id="week-38transformer">Week 38：Transformer 深化<a class="headerlink" href="#week-38transformer" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>decoder-only Transformer</li>
+<li>causal mask</li>
+<li>KV cache</li>
+<li>scaling law 基本概念</li>
+</ul>
+<h3 id="week-39rag">Week 39：RAG<a class="headerlink" href="#week-39rag" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>embedding</li>
+<li>vector database</li>
+<li>chunking</li>
+<li>retrieval</li>
+<li>reranking</li>
+<li>citation grounding</li>
+</ul>
+<p>科研应用：</p>
+<p>建立一个：</p>
+<div class="highlight"><pre><span></span><code>paper-rag-assistant
+</code></pre></div>
+<p>用于管理你课题相关论文。</p>
+<h3 id="week-40agent">Week 40：Agent<a class="headerlink" href="#week-40agent" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>tool use</li>
+<li>planning</li>
+<li>memory</li>
+<li>reflection</li>
+<li>multi-agent workflow</li>
+<li>evaluation</li>
+</ul>
+<p>科研应用：</p>
+<div class="highlight"><pre><span></span><code>agent 自动整理论文
+agent 自动生成实验配置
+agent 自动读取训练 log 并总结结果
+</code></pre></div>
+<h3 id="week-41skill-workflow">Week 41：Skill / Workflow<a class="headerlink" href="#week-41skill-workflow" title="Permanent link">&para;</a></h3>
+<p>重点：</p>
+<ul>
+<li>把重复任务封装为技能</li>
+<li>例如：</li>
+<li>h5ad → graph data</li>
+<li>Seurat metadata → PyG data</li>
+<li>training log → plot</li>
+<li>paper PDF → method summary</li>
+</ul>
+<h3 id="week-4244">Week 42–44：做一个科研助手小项目<a class="headerlink" href="#week-4244" title="Permanent link">&para;</a></h3>
+<p>项目名：</p>
+<div class="highlight"><pre><span></span><code>bio-gnn-research-assistant
+</code></pre></div>
+<p>功能：</p>
+<div class="highlight"><pre><span></span><code>1. 输入论文 PDF 或摘要
+2. 提取模型结构
+3. 生成复现 checklist
+4. 生成 PyTorch/PyG skeleton
+5. 记录到 markdown
+</code></pre></div>
+<h1 id="_6">四、每周固定学习模板<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
+<p>每周不要“只看课”。建议固定成 5 个模块：</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>时间</th>
+<th>产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数学/理论</td>
+<td>2 小时</td>
+<td>1 页公式笔记</td>
+</tr>
+<tr>
+<td>纸质教材</td>
+<td>1.5 小时</td>
+<td>章节摘要</td>
+</tr>
+<tr>
+<td>视频/网络课</td>
+<td>1.5 小时</td>
+<td>课程笔记</td>
+</tr>
+<tr>
+<td>PyTorch 代码</td>
+<td>3–4 小时</td>
+<td>可运行脚本</td>
+</tr>
+<tr>
+<td>GitHub 工程化</td>
+<td>1–2 小时</td>
+<td>commit + README 更新</td>
+</tr>
+</tbody>
+</table>
+<p>每周结束必须有：</p>
+<div class="highlight"><pre><span></span><code>1. 一个 notebook
+2. 一个 src/ 模块或 scripts/ 脚本
+3. 一个 reports/weekly_notes/weekXX.md
+4. 至少 3 个 Git commits
+</code></pre></div>
+<h1 id="_7">五、主线参考资料清单<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h1>
+<h2 id="_8">数学基础<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">主资料<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Gilbert Strang 线性代数课程 / 教材
+   用于恢复矩阵、特征值、SVD、最小二乘。</li>
+<li>《概率论与数理统计》本科教材
+   用于恢复分布、估计、检验。</li>
+<li>花书前几章
+   花书官方页面说明其覆盖线性代数、概率、信息论、数值计算和机器学习背景。(<a href="https://www.deeplearningbook.org/?utm_source=chatgpt.com">深度学习书籍</a>)</li>
+</ol>
+<h3 id="_10">辅助资料<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>3Blue1Brown：线性代数直观理解。</li>
+<li>StatQuest：统计、机器学习、深度学习概念解释。</li>
+<li>Khan Academy：概率统计基础查漏补缺。</li>
+</ul>
+<hr />
+<h2 id="_11">机器学习<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="_12">主资料<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ol>
+<li>周志华《机器学习》西瓜书
+   适合中文系统回顾。</li>
+<li>李航《统计学习方法》
+   适合补充数学推导。</li>
+<li>sklearn 官方 examples
+   用于传统机器学习代码练习。</li>
+</ol>
+<h3 id="_13">重点章节<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>线性模型
+决策树
+支持向量机
+贝叶斯分类器
+集成学习
+聚类
+降维
+特征选择
+模型评估
+</code></pre></div>
+<hr />
+<h2 id="_14">深度学习<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="_15">主资料<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ol>
+<li>PyTorch 官方教程
+   用于掌握 PyTorch 基础训练流程。(<a href="https://docs.pytorch.org/tutorials/index.html?utm_source=chatgpt.com">PyTorch Docs</a>)</li>
+<li>花书
+   用于系统理论。</li>
+<li>Dive into Deep Learning
+   用于边学边写 PyTorch。</li>
+</ol>
+<h3 id="_16">重点章节<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>MLP
+Backpropagation
+Optimization
+CNN
+RNN
+Attention
+Transformer
+Autoencoder
+Representation learning
+Regularization
+</code></pre></div>
+<hr />
+<h2 id="_17">图神经网络<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h3 id="_18">主资料<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Stanford CS224W
+   课程公开资料包括 slides 和 assignments，适合作为 GNN 系统学习主线。(<a href="https://web.stanford.edu/class/cs224w/?utm_source=chatgpt.com">Stanford University</a>)</li>
+<li>PyTorch Geometric 文档
+   PyG 是基于 PyTorch 的 GNN 库，用于结构化数据上的图神经网络。(<a href="https://pytorch-geometric.readthedocs.io/?utm_source=chatgpt.com">PyG Documentation</a>)</li>
+<li>OGB
+   OGB 提供真实、大规模、多任务图学习 benchmark 和统一 evaluator。(<a href="https://snap-stanford.github.io/ogb-web/?utm_source=chatgpt.com">SNAP</a>)</li>
+</ol>
+<h3 id="_19">辅助资料<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ol>
+<li>DGL 文档
+   DGL 支持 PyTorch，并强调可扩展到数亿节点和边的图训练。(<a href="https://www.dgl.ai/dgl_docs/?utm_source=chatgpt.com">dgl.ai</a>)</li>
+<li>GraphGym
+   GraphGym 提供用于设计和评估 GNN 的平台，PyG 目前也支持 GraphGym。(<a href="https://pytorch-geometric.readthedocs.io/en/2.5.2/advanced/graphgym.html?utm_source=chatgpt.com">PyG Documentation</a>)</li>
+<li>PyTorch Lightning
+   Lightning Trainer 可以抽象训练/验证/测试循环、callback、设备放置等工程细节。(<a href="https://lightning.ai/docs/pytorch/stable//common/trainer.html?utm_source=chatgpt.com">Lightning AI</a>)</li>
+</ol>
+<h1 id="_20">六、论文复现路线<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h1>
+<p>按“由浅入深”复现，而不是一开始复现最新复杂模型。</p>
+<h2 id="level-1-gnn">Level 1：基础 GNN<a class="headerlink" href="#level-1-gnn" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>论文/模型</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GCN</td>
+<td>理解邻接矩阵归一化与 message passing</td>
+</tr>
+<tr>
+<td>GraphSAGE</td>
+<td>理解大图采样和 inductive learning</td>
+</tr>
+<tr>
+<td>GAT</td>
+<td>理解 attention on graph</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-2-gnn">Level 2：动态图 GNN<a class="headerlink" href="#level-2-gnn" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>论文/模型</th>
+<th>目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EvolveGCN</td>
+<td>理解 GNN 参数随时间演化</td>
+</tr>
+<tr>
+<td>DySAT</td>
+<td>理解结构 attention + 时间 attention</td>
+</tr>
+<tr>
+<td>TGN</td>
+<td>理解 event-based temporal graph 和 memory module</td>
+</tr>
+</tbody>
+</table>
+<h2 id="level-3">Level 3：与课题相关的自定义模型<a class="headerlink" href="#level-3" title="Permanent link">&para;</a></h2>
+<p>最终复现/改造方向：</p>
+<div class="highlight"><pre><span></span><code>Spatial GNN + Temporal module + OT inter-time edges + communication decoder
+</code></pre></div>
+<h1 id="github_2">七、GitHub 边练边学任务设计<a class="headerlink" href="#github_2" title="Permanent link">&para;</a></h1>
+<p>GitHub 项目分成 8 个 milestone。</p>
+<h2 id="milestone-1pytorch-basic">Milestone 1：PyTorch Basic<a class="headerlink" href="#milestone-1pytorch-basic" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：完成 PyTorch 基础训练框架
+任务：
+  - linear regression
+  - logistic regression
+  - MLP
+  - checkpoint
+  - config
+  - README
+</code></pre></div>
+<h2 id="milestone-2machine-learning-from-scratch">Milestone 2：Machine Learning from Scratch<a class="headerlink" href="#milestone-2machine-learning-from-scratch" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：恢复传统 ML 和统计基础
+任务：
+  - PCA from scratch
+  - logistic regression from scratch
+  - kmeans from scratch
+  - bootstrap
+  - permutation test
+  - FDR correction
+</code></pre></div>
+<h2 id="milestone-3gnn-from-scratch">Milestone 3：GNN from Scratch<a class="headerlink" href="#milestone-3gnn-from-scratch" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：不依赖 PyG 手写基础 GNN
+任务：
+  - graph data structure
+  - GCN layer
+  - GraphSAGE aggregation
+  - GAT attention
+  - toy graph classification
+</code></pre></div>
+<h2 id="milestone-4pyg-gnn-pipeline">Milestone 4：PyG GNN Pipeline<a class="headerlink" href="#milestone-4pyg-gnn-pipeline" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：掌握 PyG 工程化训练
+任务：
+  - Cora node classification
+  - PubMed node classification
+  - link prediction
+  - NeighborLoader large graph training
+</code></pre></div>
+<h2 id="milestone-5dynamic-gnn">Milestone 5：Dynamic GNN<a class="headerlink" href="#milestone-5dynamic-gnn" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：动态图建模
+任务：
+  - snapshot graph dataset
+  - GCN + GRU
+  - GAT + Transformer
+  - future edge prediction
+</code></pre></div>
+<h2 id="milestone-6bio-gnn-prototype">Milestone 6：Bio-GNN Prototype<a class="headerlink" href="#milestone-6bio-gnn-prototype" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：接近课题真实需求
+任务：
+  - h5ad / Seurat metadata 转 graph
+  - spatial edge builder
+  - OT edge loader
+  - masked gene prediction
+  - communication edge prediction
+</code></pre></div>
+<h2 id="milestone-7experiment-management">Milestone 7：Experiment Management<a class="headerlink" href="#milestone-7experiment-management" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：工程化科研实验
+任务：
+  - YAML config
+  - random seed
+  - logging
+  - checkpoint
+  - metrics.csv
+  - plots
+  - ablation table
+</code></pre></div>
+<h2 id="milestone-8paper-style-report">Milestone 8：Paper-style Report<a class="headerlink" href="#milestone-8paper-style-report" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>目标：把项目整理成可展示成果
+任务：
+  - method.md
+  - experiments.md
+  - reproduction.md
+  - figures/
+  - preliminary result summary
+</code></pre></div>
+<h1 id="gnn">八、与课题最直接相关的 GNN 学习重点<a class="headerlink" href="#gnn" title="Permanent link">&para;</a></h1>
+<p>数据结构是：</p>
+<div class="highlight"><pre><span></span><code>每个时间点一张图
+节点规模大：~100k
+边稀疏
+节点特征高维：~2000
+时间点少：~10
+相邻时间点有 OT 连边
+</code></pre></div>
+<p>因此不应该优先学“普通小图分类”，而应该重点学：</p>
+<h2 id="1">1. 大图训练<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>必须掌握：</p>
+<div class="highlight"><pre><span></span><code>Neighbor sampling
+mini-batch training
+sparse adjacency
+edge mini-batch
+negative sampling
+</code></pre></div>
+<h2 id="2">2. 动态图建模<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>你的数据更像：</p>
+<div class="highlight"><pre><span></span><code>discrete-time dynamic graph
+</code></pre></div>
+<p>而不是高频 continuous-time event graph。
+所以第一版模型建议：</p>
+<div class="highlight"><pre><span></span><code>每个时间点用 GNN 编码空间图
+时间维度用 GRU / Transformer 编码
+OT 边用于跨时间信息传播或监督任务
+</code></pre></div>
+<h2 id="3">3. 多关系图<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>你的边可能包括：</p>
+<div class="highlight"><pre><span></span><code>spatial edge
+OT trajectory edge
+ligand-receptor prior edge
+cell-type communication edge
+</code></pre></div>
+<p>所以后期要学：</p>
+<div class="highlight"><pre><span></span><code>heterogeneous graph
+relational GNN
+edge type embedding
+attention over edge types
+</code></pre></div>
+<h2 id="4">4. 任务设计<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>最适合你课题的任务不是“普通节点分类”，而是：</p>
+<div class="highlight"><pre><span></span><code>masked gene expression reconstruction
+future cell-state prediction
+future edge prediction
+communication score prediction
+driver gene identification
+</code></pre></div>
+<h1 id="_21">九、每月实际执行表<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h1>
+<h2 id="1-pytorch">第 1 月：PyTorch + 数学复健<a class="headerlink" href="#1-pytorch" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>周</th>
+<th>理论</th>
+<th>代码</th>
+<th>GitHub 产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week 1</td>
+<td>线代复习</td>
+<td>tensor / PCA</td>
+<td><code>00_linear_algebra_review.ipynb</code></td>
+</tr>
+<tr>
+<td>Week 2</td>
+<td>概率 + MLE</td>
+<td>logistic regression</td>
+<td><code>01_probability_autograd.ipynb</code></td>
+</tr>
+<tr>
+<td>Week 3</td>
+<td>优化</td>
+<td>MLP</td>
+<td><code>train_mlp.py</code></td>
+</tr>
+<tr>
+<td>Week 4</td>
+<td>工程化</td>
+<td>config + logging</td>
+<td><code>v0.1</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-gnn">第 2 月：GNN 快速入门<a class="headerlink" href="#2-gnn" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>周</th>
+<th>理论</th>
+<th>代码</th>
+<th>GitHub 产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week 5</td>
+<td>message passing</td>
+<td>GCN from scratch</td>
+<td><code>gcn_from_scratch.py</code></td>
+</tr>
+<tr>
+<td>Week 6</td>
+<td>GCN/GAT/SAGE</td>
+<td>PyG node classification</td>
+<td><code>train_node_classifier.py</code></td>
+</tr>
+<tr>
+<td>Week 7</td>
+<td>大图采样</td>
+<td>NeighborLoader</td>
+<td><code>large_graph_training.md</code></td>
+</tr>
+<tr>
+<td>Week 8</td>
+<td>link prediction</td>
+<td>edge decoder</td>
+<td><code>train_link_prediction.py</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-gnn">第 3 月：动态图 GNN + 课题原型<a class="headerlink" href="#3-gnn" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>周</th>
+<th>理论</th>
+<th>代码</th>
+<th>GitHub 产出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week 9</td>
+<td>EvolveGCN/DySAT/TGN</td>
+<td>toy temporal graph</td>
+<td><code>temporal_dataset.py</code></td>
+</tr>
+<tr>
+<td>Week 10</td>
+<td>GCN+GRU</td>
+<td>future edge prediction</td>
+<td><code>train_temporal_gnn.py</code></td>
+</tr>
+<tr>
+<td>Week 11</td>
+<td>统计检验</td>
+<td>permutation/FDR</td>
+<td><code>stats_tests.py</code></td>
+</tr>
+<tr>
+<td>Week 12</td>
+<td>课题抽象</td>
+<td>Bio-GNN prototype</td>
+<td><code>project_prototype_v0.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="45-ml">第 4–5 月：统计与传统 ML 回补<a class="headerlink" href="#45-ml" title="Permanent link">&para;</a></h2>
+<p>重点：</p>
+<div class="highlight"><pre><span></span><code>统计检验
+线性模型
+SVM
+随机森林
+PCA/UMAP
+聚类
+模型评估
+</code></pre></div>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>ml_from_scratch/
+evaluation/
+reports/classical_ml_review.md
+</code></pre></div>
+<h2 id="67">第 6–7 月：深度学习系统化<a class="headerlink" href="#67" title="Permanent link">&para;</a></h2>
+<p>重点：</p>
+<div class="highlight"><pre><span></span><code>CNN
+RNN
+Attention
+Transformer
+VAE
+Contrastive learning
+Interpretability
+</code></pre></div>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>attention_from_scratch.py
+transformer_encoder.py
+graph_contrastive_learning.md
+</code></pre></div>
+<h2 id="89-gnn">第 8–9 月：动态图 GNN 深化<a class="headerlink" href="#89-gnn" title="Permanent link">&para;</a></h2>
+<p>重点：</p>
+<div class="highlight"><pre><span></span><code>heterogeneous graph
+multi-edge-type graph
+dynamic graph
+ablation
+large graph training
+</code></pre></div>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>bio_gnn_prototype_v1
+ablation_results.csv
+</code></pre></div>
+<h2 id="10-agent-skill">第 10 月：大模型 / Agent / Skill<a class="headerlink" href="#10-agent-skill" title="Permanent link">&para;</a></h2>
+<p>重点：</p>
+<div class="highlight"><pre><span></span><code>LLM
+RAG
+Agent
+Tool use
+科研自动化 workflow
+</code></pre></div>
+<p>产出：</p>
+<div class="highlight"><pre><span></span><code>paper_rag_assistant
+bio_gnn_research_assistant
+</code></pre></div>
+<h1 id="14">十、最先应该做的 14 天任务<a class="headerlink" href="#14" title="Permanent link">&para;</a></h1>
+<p>为了马上启动，建议你先按这个做。</p>
+<h2 id="day-1">Day 1<a class="headerlink" href="#day-1" title="Permanent link">&para;</a></h2>
+<p>创建仓库：</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>deep-learning-by-doing-pytorch
+<span class="nb">cd</span><span class="w"> </span>deep-learning-by-doing-pytorch
+git<span class="w"> </span>init
+</code></pre></div>
+<p>建立目录结构，写 README。</p>
+<h2 id="day-2">Day 2<a class="headerlink" href="#day-2" title="Permanent link">&para;</a></h2>
+<p>创建 conda 环境：</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>dl-gpu<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span>-y
+conda<span class="w"> </span>activate<span class="w"> </span>dl-gpu
+pip<span class="w"> </span>install<span class="w"> </span>torch<span class="w"> </span>torchvision<span class="w"> </span>torchaudio
+pip<span class="w"> </span>install<span class="w"> </span>torch-geometric
+pip<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>scikit-learn<span class="w"> </span>matplotlib<span class="w"> </span>seaborn<span class="w"> </span>jupyter<span class="w"> </span>pyyaml<span class="w"> </span>tqdm
+</code></pre></div>
+<p>具体 PyTorch / PyG 安装命令以后要根据你的集群 CUDA 版本调整。</p>
+<h2 id="day-34">Day 3–4<a class="headerlink" href="#day-34" title="Permanent link">&para;</a></h2>
+<p>完成 PyTorch tensor notebook：</p>
+<div class="highlight"><pre><span></span><code>tensor 创建
+reshape
+matmul
+broadcast
+autograd
+GPU tensor
+</code></pre></div>
+<h2 id="day-56">Day 5–6<a class="headerlink" href="#day-56" title="Permanent link">&para;</a></h2>
+<p>写 linear regression from scratch：</p>
+<div class="highlight"><pre><span></span><code>NumPy version
+PyTorch manual version
+PyTorch nn.Module version
+</code></pre></div>
+<h2 id="day-7">Day 7<a class="headerlink" href="#day-7" title="Permanent link">&para;</a></h2>
+<p>写第一篇周报：</p>
+<div class="highlight"><pre><span></span><code>reports/weekly_notes/week01.md
+</code></pre></div>
+<p>模板：</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># Week 01 Notes</span>
+
+<span class="gu">## 本周目标</span>
+<span class="gu">## 数学复习</span>
+<span class="gu">## 代码实现</span>
+<span class="gu">## 遇到的问题</span>
+<span class="gu">## 和课题的连接</span>
+<span class="gu">## 下周计划</span>
+</code></pre></div>
+<h2 id="day-89">Day 8–9<a class="headerlink" href="#day-89" title="Permanent link">&para;</a></h2>
+<p>复习概率、MLE、cross entropy。</p>
+<h2 id="day-1011">Day 10–11<a class="headerlink" href="#day-1011" title="Permanent link">&para;</a></h2>
+<p>写 logistic regression。</p>
+<h2 id="day-1213">Day 12–13<a class="headerlink" href="#day-1213" title="Permanent link">&para;</a></h2>
+<p>写 MLP MNIST / digits 分类。</p>
+<h2 id="day-14">Day 14<a class="headerlink" href="#day-14" title="Permanent link">&para;</a></h2>
+<p>整理 README，打 tag：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>tag<span class="w"> </span>v0.1-pytorch-basics
+</code></pre></div>
+<h1 id="_22">十一、学习方式建议<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h1>
+<p>你最适合的学习方式是：</p>
+<div class="highlight"><pre><span></span><code>先有问题 → 找理论 → 写代码 → 跑实验 → 写报告 → 回到课题
+</code></pre></div>
+<p>不要用：</p>
+<div class="highlight"><pre><span></span><code>先完整看完一本书 → 再开始写代码
+</code></pre></div>
+<p>因为这会拖太久，也不能及时辅助课题。</p>
+<p>每个知识点都按四步走：</p>
+<div class="highlight"><pre><span></span><code>1. 这个算法解决什么问题？
+2. 数学公式是什么？
+3. PyTorch 怎么实现？
+4. 能不能迁移到我的细胞图数据？
+</code></pre></div>
+<p>例如 GAT：</p>
+<div class="highlight"><pre><span></span><code>问题：邻居重要性不同
+数学：attention coefficient α_ij
+代码：GATConv / self-attention on edges
+课题：不同空间邻居、不同 LR pair 对细胞状态影响不同
+</code></pre></div>
+<h1 id="_23">十二、后续如何监督<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h1>
+<p>后续我们可以按“每周一次学习组会”的方式推进。你每周发给我：</p>
+<div class="highlight"><pre><span></span><code>1. 本周学了哪些章节/视频
+2. GitHub commit 截图或 commit log
+3. 运行结果或报错
+4. 本周最不懂的 3 个问题
+5. 下周想完成什么
+</code></pre></div>
+<p>我可以帮你做：</p>
+<div class="highlight"><pre><span></span><code>代码 review
+数学推导讲解
+论文拆解
+实验设计
+GitHub 项目结构调整
+README/报告润色
+课题模型方案迭代
+求职项目包装
+</code></pre></div>
+<p>你第一阶段的检查标准很简单：</p>
+<blockquote>
+<p><strong>第 1 个月结束时，你应该能独立写出一个 PyTorch 训练脚本。
+第 2 个月结束时，你应该能用 PyG 跑 GCN/GAT/GraphSAGE。
+第 3 个月结束时，你应该有一个与你课题相关的动态图 GNN prototype。</strong></p>
+</blockquote>
+<p>这就是最短路径。先让 GNN 能服务课题，再系统补齐深度学习全图。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
